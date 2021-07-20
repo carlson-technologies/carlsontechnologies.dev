@@ -1,0 +1,95 @@
+#page {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgb(237, 237, 237) 1px, transparent 1px), linear-gradient(to bottom, rgb(237, 237, 237) 1px, transparent 1px), radial-gradient(circle, #e3e3e3 1px, rgba(0, 0, 0, 0) 1px);
+}
+
+#footer-items p {
+    color: gray;
+    transition: .5s ease;
+}
+
+#footer-items a:not(:last-child) {
+    margin-right: 1em;
+    color: red !important;
+}
+
+#footer-items a:hover {
+    text-decoration: none;
+}
+
+#footer-items p:hover {
+    color: black;
+}
+
+/* SVGs */
+
+#svg-one {
+    animation: shrink 8s infinite, duration-shrink 7s infinite;
+    -webkit-animation: shrink 8s infinite, duration-shrink 7s infinite;
+    -moz-animation: shrink 8s infinite, duration-shrink 7s infinite;
+    -o-animation: shrink 8s infinite, duration-shrink 7s infinite;
+    font-size: 15em;
+}
+
+@keyframes shrink {
+    50% {
+        transform: scale(110%);
+    }
+}
+
+#svg-two {
+    animation: grow 8s infinite, duration-grow 10s infinite;
+    -webkit-animation: grow 8s infinite, duration-grow 10s infinite;
+    -moz-animation: grow 8s infinite, duration-grow 10s infinite;
+    -o-animation: grow 8s infinite, duration-grow 10s infinite;
+    font-size: 15em;
+}
+
+@keyframes grow {
+    50% {
+        transform: scale(90%);
+    }
+}
+
+#svg-three {
+    animation: tilt 8s infinite, duration-tilt 5s infinite;
+    -webkit-animation: tilt 8s infinite, duration-tilt 5s infinite;
+    -moz-animation: tilt 8s infinite, duration-tilt 5s infinite;
+    -o-animation: tilt 8s infinite, duration-tilt 5s infinite;
+    font-size: 15em;
+}
+
+@keyframes tilt {
+    50% {
+        transform: rotate(20deg);
+    }
+}
+
+/* Duration Keyframes */
+
+@keyframes duration-tilt {
+    0%, 100% {
+        fill: #FFF5F5;
+    }
+    50% {
+        fill: #FED7D7;
+    }
+}
+
+@keyframes duration-grow {
+    0%, 100% {
+        fill: #EBF8FF;
+    }
+    50% {
+        fill: #BEE3F8;
+    }
+}
+
+@keyframes duration-shrink {
+    0%, 100% {
+        fill: #F7FAFC;
+    }
+    50% {
+        fill: #EDF2F7;
+    }
+}
