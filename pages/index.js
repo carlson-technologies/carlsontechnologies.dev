@@ -5,7 +5,8 @@ import {
   Heading,
   Text,
   Link,
-  Box
+  Box,
+  Image,
 } from '@chakra-ui/react'
 import { FiYoutube, FiCoffee } from "react-icons/fi"
 
@@ -21,7 +22,7 @@ export default function Home() {
     <>
       <Head>
         <title>Carlson Technologies LLC</title>
-        <meta name="description" content="Programming educations and solutions." />
+        <meta name="description" content="Technical content and services." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -60,8 +61,9 @@ export default function Home() {
         id="page"
       >
         <Flex as="header" flexDir="column" my={10} align="center" mx={2}>
+          <Image src="/favicon.ico" w={100} h={100} alt="Carlson Technologies Logo" />
           <Heading as="h1" size="2xl" textAlign="center">Carlson Technologies LLC</Heading>
-          <Heading as="h2" size="md" mt={4} color="gray.600" textAlign="center">Programming education and solutions.</Heading>
+          <Heading as="h2" size="md" mt={4} color="gray.600" textAlign="center">Technical content and services.</Heading>
         </Flex>
 
         <Flex
@@ -71,8 +73,8 @@ export default function Home() {
           maxW={1000}
           flexDir={["column", "column", "column", "row"]}
         >
-          <BoxComponent icon={FiYoutube} title="Benjamin Carlson" description="Learn to code through tutorial videos on this YouTube channel." href="https://youtube.com/benjamincarlson" />
-          <BoxComponent icon={FiCoffee} title="coffeeclass.io" description="Learn to program by following project tutorials or working through Coffeeclass Learn." href="https://coffeeclass.io" />
+          <BoxComponent icon={FiYoutube} title="Benjamin Carlson" description="YouTube channel about computer science, business, and productivity." href="https://youtube.com/benjamincarlson" />
+          <BoxComponent icon={FiCoffee} title="coffeeclass.io" description="A programming content site with tutorials, snippets, guides, and a learn section." href="https://coffeeclass.io" />
         </Flex>
 
         <Flex
